@@ -1,27 +1,91 @@
-# React + TypeScript + Vite
+# ☕ Coffee Delivery 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um e-commerce de cafés especiais com carrinho de compras e checkout completo.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **ReactJS** - Biblioteca principal
+- **TypeScript** - Tipagem estática
+- **Styled Components** - Estilização
+- **React Hook Form** - Formulários
+- **Zod** - Validação de dados
+- **Context API** - Gerenciamento de estado
+- **Phosphor Icons** - Ícones
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+✔️ Catálogo de cafés  
+✔️ Adicionar/remover itens do carrinho  
+✔️ Ajustar quantidades  
+✔️ Formulário de endereço com validação  
+✔️ Seleção de método de pagamento  
+✔️ Página de confirmação de pedido  
 
-- Configure the top-level `parserOptions` property like this:
+## 🎨 Design System
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```ts
+export const defaultTheme = {
+  // Cores base
+  white: '#FFFFFF',
+  background: '#FAFAFA',
+  
+  // Cores de texto
+  'base-title': '#272221',
+  'base-subtitle': '#403937',
+  'base-text': '#574F4D',
+  
+  // Cores de componentes
+  'purple-dark': '#4B2995',
+  purple: '#8047F8',
+  'yellow-dark': '#C47F17',
+  yellow: '#DBAC2C',
+};
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 📦 Estrutura do Projeto
+
+```
+src/
+├── assets/
+├── components/
+│   ├── Cart/
+│   ├── CoffeeCard/
+│   ├── Counter/
+│   ├── DeliveryInfo/
+│   ├── Header/
+│   ├── PaymentMethod/
+│   └── Success/
+├── contexts/
+├── pages/
+│   ├── Checkout/
+│   ├── Home/
+│   └── Success/
+├── styles/
+└── App.tsx
+```
+
+## 🛠️ Como Executar
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/rocketseat-education/ignite-challenge-solution-reactjs-coffee-delivery.git
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Inicie o servidor:
+```bash
+npm run dev
+```
+
+4. Acesse no navegador:
+```
+http://localhost:3000
+```
+
+---
+
+Desenvolvido como parte do programa Ignite da [Rocketseat](https://www.rocketseat.com.br/) 🚀
